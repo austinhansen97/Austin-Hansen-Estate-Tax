@@ -1,0 +1,73 @@
+/* parent */
+.bar-area {
+  width: 100%;
+  padding: 0%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 4% 0;
+}
+
+/* child */
+
+.base-bar {
+  padding: 0%;
+  height: 100%;
+  width: 90%;
+  border-radius: 5px;
+  background-color: #ff9065;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* child of child */
+
+.fill-bar {
+  padding: 3%;
+  background-color: #4cb955;
+  border-right: 5px solid rgb(10, 42, 63);
+  color: rgb(10, 42, 63);
+  width: 20%;
+  transition: all 0.8s ease-out;
+}
+
+/* ------------------ */
+
+.second-base-bar {
+  padding: 0%;
+  height: 100%;
+  width: 90%;
+  border-radius: 5px;
+  background-color: rgb(253, 234, 165);
+  display: flex;
+  justify-content: flex-start;
+  margin: 1% 0 2% 0;
+}
+
+/* Label Area --------------- */
+
+.labels {
+  display: flex;
+  flex-flow: column;
+  text-align: left;
+}
+
+.label1 {
+  color: #4cb955;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.label2 {
+  color: #ff9065;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.label3 {
+  color: rgb(253, 234, 165);
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-top: white solid 1px;
+}

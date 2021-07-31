@@ -1,0 +1,188 @@
+/* Parent for right&left tiles area */
+
+.tile {
+  display: flex;
+  flex-flow: row;
+  margin: 0;
+  justify-content: center;
+}
+
+/* ------------------------------------------------ */
+/* RIGHT side parent */
+
+.rightBoxesParent {
+  display: flex;
+  flex-flow: column-reverse wrap;
+  align-items: left;
+  margin: 2% 1%;
+  padding: 0%;
+  width: 40%;
+  align-self: flex-start;
+  /* border: black solid 1px; */
+}
+
+/* 1st level child for email and account window area */
+
+.account-window {
+  border-radius: 3px;
+  border: rgb(10, 42, 63) 1.5px solid;
+  width: 95%;
+  background: rgb(255, 255, 255);
+  margin: 1% 1% 2% 1%;
+  padding: 2% 6% 4% 6%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  /* border: rgb(10, 42, 63) 1px solid; */
+}
+
+.account-window h2 {
+  width: 70%;
+}
+
+.account-window-buttons {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-account-button {
+  color: rgb(255, 255, 255);
+  padding: 5% 0%;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  margin: 1%;
+  background: rgb(10, 42, 63);
+  font-family: "Poppins", sans-serif;
+}
+
+.login-button {
+  color: rgb(10, 42, 63);
+  font-weight: 900;
+  padding: 2% 0%;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  margin: 1.5%;
+  background: white;
+  border: 1.7px solid rgb(10, 42, 63);
+  font-family: "Poppins", sans-serif;
+}
+
+.login-button:hover {
+  background-color: rgb(187, 214, 240);
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+  border-radius: 3px;
+  border: solid 6px rgb(221, 211, 176);
+  width: 95%;
+  background-color: white;
+  margin: 1% 1% 2% 1%;
+  padding: 2%;
+  text-align: left;
+  /* border: rgb(10, 42, 63) 1px solid; */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* general h2 styling for suggestions header */
+h2 {
+  font-size: large;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 2% 0;
+}
+
+/* Newsletter input field */
+.inputNewsletter {
+  font-size: 1.8rem;
+  border-radius: 5px;
+  padding: 2% 3%;
+  margin: 4% 0;
+  width: 80%;
+  border: solid rgb(10, 42, 63) 1px;
+}
+
+/* Newsletter submission button */
+.buttonNewsletter {
+  color: rgb(255, 255, 255);
+  padding: 3% 0%;
+  width: 30%;
+  border-radius: 8px;
+  border: none;
+  margin: 0;
+  background: rgb(10, 42, 63);
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------------------------------------------- */
+
+/* LEFT side parent of eachClientTile */
+.aroundClientTiles {
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0);
+  margin: 0 1%;
+  padding: 1%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+  font-size: large;
+  align-self: flex-start;
+}
+
+/* Child under "aroundClientTiles" */
+.eachClientTile {
+  border-radius: 7px;
+  width: 90%;
+  background-color: rgb(10, 42, 63);
+  margin: 1% 0;
+  padding: 2%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+/* MOBILE VIEWS */
+
+@media (max-width: 800px) {
+  .tile {
+    flex-flow: column;
+  }
+
+  .aroundClientTiles {
+    align-self: center;
+  }
+
+  .rightBoxesParent {
+    align-items: center;
+    align-self: center;
+  }
+
+  .rightBoxesParent {
+    width: 95%;
+  }
+  .aroundClientTiles {
+    width: 100%;
+  }
+  .eachClientTile {
+    padding: 4% 6%;
+  }
+  .buttonNewsletter {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .eachTile {
+    width: 90%;
+  }
+}

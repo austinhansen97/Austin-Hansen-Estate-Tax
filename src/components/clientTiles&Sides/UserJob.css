@@ -1,0 +1,9 @@
+.num-owed {
+  font-weight: 800;
+  font-size: 200%;
+  letter-spacing: 0.15rem;
+}
+
+.text-around-number {
+  font-size: 1.6rem;
+}

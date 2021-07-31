@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@200&display=swap");
+
+/* FILE FOR TOP (LEFT TITLE AND RIGHT FORM) */
+/* top of site container */
+
+.inputArea {
+  display: flex;
+  margin: 2% 3% 0% 3%;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Title */
+.left {
+  flex: 1.5;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.left h2 {
+  margin: -2% 0 0 0;
+}
+
+.left p {
+  margin: 1% 15%;
+  font-family: "Hahmlet", serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+/* input fields and buttons (parent)*/
+.right {
+  flex: 1;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+  box-shadow: 3px 3px 9px;
+  background-color: rgb(221, 211, 176);
+}
+
+/* label and field groupings (parent to task field and description field */
+.parentField {
+  text-align: center;
+  padding: 1%;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/* task field only */
+.taskField {
+  font-size: 1.8rem;
+  border-radius: 5px;
+  border: solid rgb(10, 42, 63) 1px;
+  padding: 4%;
+}
+
+/* description field only */
+.descriptionField {
+  font-size: 1.8rem;
+  border-radius: 5px;
+  border: solid rgb(10, 42, 63) 1px;
+  padding: 4%;
+  font-family: "Roboto", sans-serif;
+}
+
+.buttonParent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  color: rgb(255, 255, 255);
+  padding: 2% 0%;
+  border-radius: 8px;
+  border: none;
+  width: 30%;
+  margin: 0.5%;
+  background: rgb(10, 42, 63);
+  font-family: "Poppins", sans-serif;
+}
+
+button:hover {
+  background: rgb(106, 137, 168);
+}
+
+/* --------------- */
+
+@media (max-width: 800px) {
+  .inputArea {
+    flex-flow: column;
+  }
+  .left {
+    text-align: center;
+  }
+  .button {
+    width: 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  .inputArea {
+    flex-flow: row;
+  }
+}
+
+@media (max-width: 600px) {
+  .inputArea {
+    flex-flow: column;
+  }
+  .right {
+    margin: 3% 0;
+    width: 95%;
+  }
+}
